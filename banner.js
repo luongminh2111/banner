@@ -1,6 +1,6 @@
-
-function SapoWeb(1) {
-    axios.get("http://localhost:8080/api/banner-status/random/" + 1).then(res => {
+import axios from "axios";
+function SapoWeb(sectionID) {
+    axios.get("http://localhost:8080/api/banner-status/random/" + sectionID).then(res => {
         console.log("data random  lay ra: ", res.data)
     })
 }
